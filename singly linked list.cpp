@@ -43,7 +43,7 @@ class Node{
 
 Node *Head;
 
-
+//To display a node
 void Node::print()
 {
 	Node *temp = Head;
@@ -58,7 +58,7 @@ void Node::print()
 	cout<<"\n";
 }
 
-
+//To insert node at begin
 void Node::insert_begin(int x ,string na, float pa)
 {
 	Node *temp = new Node();
@@ -71,7 +71,7 @@ void Node::insert_begin(int x ,string na, float pa)
 }
 
 
-
+//To insert node at end
 void Node::insert_end(int x ,string na, float pa)
 {
 	Node *temp = new Node();
@@ -95,7 +95,7 @@ void Node::insert_end(int x ,string na, float pa)
 }
 
 
-
+//To insert node at specific position
 void Node::insert(int X,string na, float pa, int N)
 {
 	Node *temp = new Node();
@@ -122,7 +122,7 @@ void Node::insert(int X,string na, float pa, int N)
 	
 }
 
-
+//To insert node according roll number 
 void Node::insert_roll(int X,string na, float pa, int N)
 {
 	Node *temp = new Node();
@@ -162,7 +162,7 @@ void Node::insert_roll(int X,string na, float pa, int N)
 	
 }
 
-
+//To delete node accoring to position
 void Node::Delete(int n)
 {
 	Node *temp = new Node();
@@ -184,7 +184,7 @@ void Node::Delete(int n)
 	}
 }
 
-
+// to delete node at begining
 void Node::Delete_begin()
 {
 	Node *temp = new Node();
@@ -200,7 +200,7 @@ void Node::Delete_begin()
 
 }
 
-
+//To delete node at end
 void Node::Delete_end()
 {
 	Node *temp = new Node();
@@ -221,7 +221,7 @@ void Node::Delete_end()
 }
 
 
-
+//To update roll nukmber of specific node
 void Node::Update_roll(int x, int up_val1){
     Node *temp = new Node();
     temp=Head;
@@ -239,6 +239,9 @@ void Node::Update_roll(int x, int up_val1){
         temp=temp->Next;
     }
 }
+
+
+// To update name of node
 void Node::Update_name(int x,string up_val2){
     Node *temp = new Node();
     temp=Head;
@@ -257,6 +260,8 @@ void Node::Update_name(int x,string up_val2){
     }
 }
 
+
+// To update percentage of node
 void Node::Update_per(int x, float up_val3){
     Node *temp = new Node();
     temp=Head;
@@ -276,6 +281,7 @@ void Node::Update_per(int x, float up_val3){
 }
 
 
+// To search according to roll number
 
 void Node::Search_roll(int x){
     Node *temp = new Node();
@@ -291,6 +297,8 @@ void Node::Search_roll(int x){
     }
 }
 
+
+// To search according to name
 void Node::Search_name(string up_val2){
     Node *temp = new Node();
     temp=Head;
@@ -304,6 +312,9 @@ void Node::Search_name(string up_val2){
         temp=temp->Next;
     }
 }
+
+
+// To search according to percentage
 
 void Node::Search_per(float up_val3){
     Node *temp = new Node();
@@ -319,7 +330,7 @@ void Node::Search_per(float up_val3){
     }
 }
 
-
+// To sort according to roll number
 void Node::Sort_roll(){
     int temp_r; string temp_n; float temp_p;
     
@@ -362,6 +373,9 @@ void Node::Sort_roll(){
     
 }
 
+
+// To sort according to name
+
 void Node::Sort_name(){
     int temp_r; string temp_n; float temp_p;
     
@@ -402,6 +416,8 @@ void Node::Sort_name(){
     }
     }
 }
+
+// To sort according to percentage
 
 void Node::Sort_per(){
     int temp_r; string temp_n; float temp_p;
